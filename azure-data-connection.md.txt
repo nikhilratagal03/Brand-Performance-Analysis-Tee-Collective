@@ -1,0 +1,51 @@
+# Azure Data Connection – Tee Collective Power BI Project
+
+This document outlines how data was sourced and connected from **Microsoft Azure** to Power BI for the *Tee Collective* apparel brand analysis project.
+
+---
+
+## 🔗 Azure Data Source Details
+
+- **Platform Used:** Microsoft Azure
+- **Service Type:** Azure SQL Database *(or specify if it's Azure Blob Storage, Azure Data Lake, etc.)*
+- **Database Name:** tee_collective_db *(example)*
+- **Table(s) Used:** brands, sales_data, discount_data *(example names)*
+
+---
+
+## 🔧 Power BI Data Connection Setup
+
+1. **Open Power BI Desktop**
+2. Click **Home → Get Data → Azure → Azure SQL Database**
+3. Enter:
+   - **Server:** `your-server-name.database.windows.net`
+   - **Database:** `tee_collective_db`
+4. Use appropriate authentication (usually *Organizational Account* or *Database credentials*)
+5. Select relevant tables (e.g., `brands`, `sales`, `product_prices`, etc.)
+6. Load the data into Power BI and start modeling.
+
+---
+
+## 🧹 Data Preparation Notes
+
+- Performed initial transformations using **Power Query Editor** in Power BI.
+- Cleaned null values, removed duplicates, and standardized brand names.
+- Created calculated columns for:
+  - **Profit %**
+  - **Average Sales Price**
+  - **Discount %**
+  - **Category Counts**
+
+---
+
+## 🛡️ Data Privacy & Access
+
+- The Azure SQL database is hosted on a secure environment and is **not publicly accessible**.
+- Credentials used for connection are encrypted and not shared in this repository.
+- This project uses **sample or anonymized data** for demonstration purposes only.
+
+---
+
+## ✅ Result
+
+Power BI successfully connected to Azure, allowing dynamic data refresh and scalable reporting for Tee Collective Pvt Ltd.
