@@ -40,13 +40,7 @@ Quick summary:
 - **Azure SQL Database**: Primary source for sales, brand, and discount data.
 - **CSV File**: Supplementary brand variety data – [`brand_variety_data.csv`](./data/brand_variety_data.csv)
 
----
-
-## 🖼️ Dashboard Preview
-
-![Dashboard Preview](./assets/dashboard-preview.png)
-
----
+-----
 
 ## 📈 Key Insights
 
